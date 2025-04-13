@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutPage() {
   const [isVisible, setIsVisible] = useState(false);
-  const sectionRefs = useRef([]);
+  const sectionRefs = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
     setIsVisible(true);
@@ -14,8 +14,8 @@ export default function AboutPage() {
       threshold: 0.2,
     };
 
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry: IntersectionObserverEntry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-in");
         }
@@ -38,7 +38,7 @@ export default function AboutPage() {
     };
   }, []);
 
-  const addToRefs = (el) => {
+  const addToRefs = (el: HTMLDivElement | null) => {
     if (el && !sectionRefs.current.includes(el)) {
       sectionRefs.current.push(el);
     }
@@ -548,7 +548,7 @@ export default function AboutPage() {
       </div>
 
       {/* Custom CSS for animations */}
-      <style jsx>{`
+      <style>{`
         .animate-in {
           opacity: 1 !important;
           transform: translateY(0) !important;

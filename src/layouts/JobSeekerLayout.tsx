@@ -6,7 +6,7 @@ import {
   MagnifyingGlassIcon,
   ClipboardDocumentCheckIcon,
   UserIcon,
-  CalendarIcon,
+  // CalendarIcon,
   ClockIcon,
   Bars3Icon,
   XMarkIcon,
@@ -31,11 +31,11 @@ const JobSeekerLayout = () => {
       href: "/jobseeker/application-status",
       icon: ClipboardDocumentCheckIcon,
     },
-    {
-      name: "Interviews",
-      href: "/jobseeker/schedule-interview",
-      icon: CalendarIcon,
-    },
+    // {
+    //   name: "Interviews",
+    //   href: "/jobseeker/schedule-interview",
+    //   icon: CalendarIcon,
+    // },
     { name: "History", href: "/jobseeker/history", icon: ClockIcon },
     { name: "My Profile", href: "/jobseeker/profile", icon: UserIcon },
   ];

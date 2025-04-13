@@ -37,7 +37,7 @@ import ApplicationForm from "./pages/jobseeker/ApplicationForm";
 import PaymentPage from "./pages/jobseeker/PaymentPage";
 import ApplicationStatus from "./pages/jobseeker/ApplicationStatus";
 import JobSeekerProfile from "./pages/jobseeker/JobSeekerProfile";
-import ScheduleInterview from "./pages/jobseeker/ScheduleInterview";
+// import ScheduleInterview from "./pages/jobseeker/ScheduleInterview";
 import ApplicationHistory from "./pages/jobseeker/ApplicationHistory";
 
 // Employer Pages
@@ -91,7 +91,7 @@ function App() {
           <Route path="payment/:id" element={<PaymentPage />} />
           <Route path="application-status" element={<ApplicationStatus />} />
           <Route path="profile" element={<JobSeekerProfile />} />
-          <Route path="schedule-interview" element={<ScheduleInterview />} />
+          {/* <Route path="schedule-interview" element={<ScheduleInterview />} /> */}
           <Route path="history" element={<ApplicationHistory />} />
         </Route>
 

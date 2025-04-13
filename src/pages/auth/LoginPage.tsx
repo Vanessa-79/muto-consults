@@ -177,7 +177,7 @@ const Login = ({ setUserRole }: LoginProps) => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-navy-700 hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 ${
+                className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-navy-500 hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 ${
                   isLoading ? "opacity-75 cursor-not-allowed" : ""
                 }`}
               >

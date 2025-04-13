@@ -89,8 +89,8 @@ export default function RegisterPage({ setUserRole }: RegisterPageProps) {
             <input
               {...register("name")}
               type="text"
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="John Doe"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              placeholder="Vanessa"
             />
             {errors.name && (
               <p className="text-sm text-red-600 mt-1">{errors.name.message}</p>
@@ -107,7 +107,7 @@ export default function RegisterPage({ setUserRole }: RegisterPageProps) {
             <input
               {...register("email")}
               type="email"
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
               placeholder="you@example.com"
             />
             {errors.email && (
@@ -127,7 +127,7 @@ export default function RegisterPage({ setUserRole }: RegisterPageProps) {
             <input
               {...register("password")}
               type="password"
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2  focus:ring-orange-500"
               placeholder="••••••••"
             />
             {errors.password && (
@@ -147,7 +147,7 @@ export default function RegisterPage({ setUserRole }: RegisterPageProps) {
             <input
               {...register("confirmPassword")}
               type="password"
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
               placeholder="••••••••"
             />
             {errors.confirmPassword && (
@@ -166,7 +166,7 @@ export default function RegisterPage({ setUserRole }: RegisterPageProps) {
             </label>
             <select
               {...register("role")}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
               <option value="jobseeker">Job Seeker</option>
               <option value="employer">Employer</option>
@@ -176,14 +176,18 @@ export default function RegisterPage({ setUserRole }: RegisterPageProps) {
             )}
           </div>
 
-          <Button type="submit" className="w-full" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            className="w-full bg-navy-500 hover:bg-navy-800 "
+            disabled={isSubmitting}
+          >
             {isSubmitting ? "Creating account..." : "Create Account"}
           </Button>
         </form>
 
         <p className="mt-4 text-center text-sm text-gray-600">
           Already have an account?{" "}
-          <Link to="/login" className="text-blue-600 hover:text-blue-700">
+          <Link to="/login" className="text-orange-600 hover:text-orange-700">
             Sign in here
           </Link>
         </p>
