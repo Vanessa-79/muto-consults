@@ -8,7 +8,7 @@ const EmployerLayout: React.FC = () => {
     { name: "Post Jobs", href: "/employer/post-job", icon: BriefcaseIcon },
     { name: "Manage Jobs", href: "/employer/manage-jobs", icon: BriefcaseIcon },
     { name: "Applicants", href: "/employer/review-applicants", icon: UserIcon },
-    { name: "Profile", href: "/employer/profile", icon: UserIcon },
+    { name: "Profile", href: "/employer/employer-profile", icon: UserIcon },
   ];
 
   return (

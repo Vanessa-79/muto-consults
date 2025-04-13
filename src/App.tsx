@@ -46,7 +46,7 @@ import ManageJobs from "./pages/employer/ManageJobs";
 import ReviewApplicants from "./pages/employer/ReviewApplicants";
 import EmployerScheduleInterview from "./pages/employer/ScheduleInterview";
 // import EmployerPayments from "./pages/employer/Payments";
-// import EmployerProfile from "./pages/employer/Profile";
+import EmployerProfile from "./pages/employer/EmployerProfile";
 
 function App() {
   // This would be connected to your authentication system in a real app
@@ -96,6 +96,7 @@ function App() {
           <Route path="manage-jobs" element={<ManageJobs />} />
           <Route path="review-applicants" element={<ReviewApplicants />} />
           <Route path="schedule-interview" element={<EmployerScheduleInterview />} />
+          <Route path="employer-profile" element={<EmployerProfile />} />
         </Route>
 
         {/* 404 Route */}
