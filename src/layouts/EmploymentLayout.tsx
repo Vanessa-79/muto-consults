@@ -6,7 +6,8 @@ const EmployerLayout: React.FC = () => {
   const navigation = [
     { name: "Dashboard", href: "/employer", icon: HomeIcon },
     { name: "Post Jobs", href: "/employer/post-job", icon: BriefcaseIcon },
-    { name: "Applicants", href: "/employer/applicants", icon: UserIcon },
+    { name: "Manage Jobs", href: "/employer/manage-jobs", icon: BriefcaseIcon },
+    { name: "Applicants", href: "/employer/review-applicants", icon: UserIcon },
     { name: "Profile", href: "/employer/profile", icon: UserIcon },
   ];
 

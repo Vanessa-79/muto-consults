@@ -21,14 +21,14 @@ const applicationSchema = z.object({
 type ApplicationFormData = z.infer<typeof applicationSchema>;
 
 export default function ApplicationForm() {
-  const { jobId } = useParams<{ jobId: string }>();
+  const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
   // Mock job data
   const job = {
-    id: jobId || "1",
+    id: id || "1",
     title: "Senior Software Engineer",
     company: "Tech Solutions Inc.",
     location: "New York, NY",
@@ -389,7 +389,7 @@ export default function ApplicationForm() {
                 )}
               </button>
               <Link
-                to={`/jobseeker/job/${jobId}`}
+                to={`/jobseeker/job/${id}`}
                 className="px-6 py-2 border border-gray-300 rounded-md text-center hover:bg-gray-50"
               >
                 Cancel

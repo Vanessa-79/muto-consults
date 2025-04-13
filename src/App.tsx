@@ -41,10 +41,10 @@ import ApplicationHistory from "./pages/jobseeker/ApplicationHistory";
 
 // Employer Pages
 import EmployerDashboard from "./pages/employer/Dashboard";
-// import PostJob from "./pages/employer/PostJob";
-// import ManageJobs from "./pages/employer/ManageJobs";
-// import ReviewApplicants from "./pages/employer/ReviewApplicants";
-// import EmployerScheduleInterview from "./pages/employer/ScheduleInterview";
+import PostJob from "./pages/employer/PostJob";
+import ManageJobs from "./pages/employer/ManageJobs";
+import ReviewApplicants from "./pages/employer/ReviewApplicants";
+import EmployerScheduleInterview from "./pages/employer/ScheduleInterview";
 // import EmployerPayments from "./pages/employer/Payments";
 // import EmployerProfile from "./pages/employer/Profile";
 
@@ -79,9 +79,10 @@ function App() {
         <Route path="/jobseeker" element={<JobSeekerLayout />}>
           <Route index element={<JobSeekerDashboard />} />
           <Route path="job-search" element={<JobSearch />} />
-          <Route path="job-detail" element={<JobDetail />} />
-          <Route path="application-form" element={<ApplicationForm />} />
+          <Route path="job/:id" element={<JobDetail />} />
+          <Route path="application-form/:id" element={<ApplicationForm />} />
           <Route path="payment" element={<PaymentPage />} />
+          <Route path="payment/:id" element={<PaymentPage />} />
           <Route path="application-status" element={<ApplicationStatus />} />
           <Route path="profile" element={<JobSeekerProfile />} />
           <Route path="schedule-interview" element={<ScheduleInterview />} />
@@ -91,6 +92,10 @@ function App() {
         {/* Employer Routes */}
         <Route path="/employer" element={<EmployerLayout />}>
           <Route index element={<EmployerDashboard />} />
+          <Route path="post-job" element={<PostJob />} />
+          <Route path="manage-jobs" element={<ManageJobs />} />
+          <Route path="review-applicants" element={<ReviewApplicants />} />
+          <Route path="schedule-interview" element={<EmployerScheduleInterview />} />
         </Route>
 
         {/* 404 Route */}

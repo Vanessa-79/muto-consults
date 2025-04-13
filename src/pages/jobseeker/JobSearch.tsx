@@ -243,19 +243,19 @@ export default function JobSearch() {
               </div>
               <p className="mt-4 text-gray-600">{job.description}</p>
               <div className="mt-4 flex space-x-3">
-                <a
-                  href={`/jobseeker/payment/${job.id}`}
-                  className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-                >
-                  View Details
-                </a>
-                <a
-                  href={`/jobseeker/apply/${job.id}`}
-                  className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50"
-                >
-                  Quick Apply
-                </a>
-              </div>
+  <a
+    href={`/jobseeker/payment/${job.id}`}
+    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+  >
+    View Details
+  </a>
+  <a
+    href={`/jobseeker/payment/${job.id}`} 
+    className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50"
+  >
+    Quick Apply
+  </a>
+</div>
             </div>
           ))
         )}
