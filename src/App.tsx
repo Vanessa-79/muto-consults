@@ -25,8 +25,8 @@ import Privacy from "./pages/HomePage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminJobs from "./pages/admin/AdminJobs";
 import AdminUsers from "./pages/admin/AdminUsers";
-// import AdminPayments from "./pages/admin/Payments";
-// import AdminSettings from "./pages/admin/Settings";
+import AdminPayments from "./pages/admin/AdminPayments";
+import AdminSettings from "./pages/admin/AdminSettings";
 
 // Job Seeker Pages
 import JobSeekerDashboard from "./pages/jobseeker/Dashboard";
@@ -75,8 +75,8 @@ function App() {
           <Route index element={<AdminDashboard />} />
           <Route path="admin-jobs" element={<AdminJobs />} />
           <Route path="admin-users" element={<AdminUsers />} />
-          {/* <Route path="payments" element={<AdminPayments />} /> */}
-          {/* <Route path="settings" element={<AdminSettings />} /> */}
+          <Route path="admin-payments" element={<AdminPayments />} />
+          <Route path="admin-settings" element={<AdminSettings />} />
         </Route>
 
         {/* Job Seeker Routes */}

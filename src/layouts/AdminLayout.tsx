@@ -20,8 +20,8 @@ const AdminLayout = () => {
     { name: "Dashboard", href: "/admin", icon: ChartPieIcon },
     { name: "Jobs", href: "/admin/admin-jobs", icon: BriefcaseIcon },
     { name: "Users", href: "/admin/admin-users", icon: UsersIcon },
-    { name: "Payments", href: "/admin/payments", icon: CreditCardIcon },
-    { name: "Settings", href: "/admin/settings", icon: Cog6ToothIcon },
+    { name: "Payments", href: "/admin/admin-payments", icon: CreditCardIcon },
+    { name: "Settings", href: "/admin/admin-settings", icon: Cog6ToothIcon },
   ];
 
   return (
