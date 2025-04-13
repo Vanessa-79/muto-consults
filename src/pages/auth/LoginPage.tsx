@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, FormEvent, ChangeEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import logoImage from "../../assets/images/logo.png"; 
+
+
 
 type UserRole = "admin" | "jobseeker" | "employer";
 
@@ -53,7 +56,7 @@ const Login = ({ setUserRole }: LoginProps) => {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <img
           className="mx-auto h-12 w-auto"
-          src="/logo.svg"
+          src={logoImage}
           alt="Muto Consults"
         />
         <h2 className="mt-6 text-center text-3xl font-extrabold text-navy-700">
@@ -62,7 +65,7 @@ const Login = ({ setUserRole }: LoginProps) => {
         <p className="mt-2 text-center text-sm text-gray-600">
           Or{" "}
           <Link
-            to="/register"
+            to="/signup"
             className="font-medium text-orange-500 hover:text-orange-600"
           >
             create a new account

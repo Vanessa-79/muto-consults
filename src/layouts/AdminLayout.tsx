@@ -11,6 +11,7 @@ import {
   ArrowRightOnRectangleIcon,
   BellIcon,
 } from "@heroicons/react/24/outline";
+import logoImage from "../assets/images/logo.png"; 
 
 const AdminLayout = () => {
   const location = useLocation();
@@ -39,7 +40,7 @@ const AdminLayout = () => {
         <div className="relative flex flex-col w-full max-w-xs pt-5 pb-4 bg-navy-700">
           <div className="flex items-center justify-between px-4">
             <div className="flex items-center">
-              <img src="/logo.svg" alt="Muto Consults" className="w-auto h-8" />
+              <img src={logoImage} alt="Muto Consults" className="w-auto h-8" />
               <span className="ml-3 text-xl font-medium text-white">
                 Muto Admin
               </span>
@@ -86,7 +87,7 @@ const AdminLayout = () => {
         <div className="flex flex-col w-64">
           <div className="flex flex-col flex-1 min-h-0 bg-navy-700">
             <div className="flex items-center h-16 flex-shrink-0 px-4 bg-navy-800">
-              <img src="/logo.svg" alt="Muto Consults" className="w-auto h-8" />
+              <img src={logoImage} alt="Muto Consults" className="w-auto h-8" />
               <span className="ml-3 text-xl font-medium text-white">
                 Muto Admin
               </span>

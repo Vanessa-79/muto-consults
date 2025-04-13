@@ -17,7 +17,7 @@ import Home from "./pages/HomePage";
 import About from "./pages/AboutPage";
 import Contact from "./pages/ContactPage";
 import Login from "./pages/auth/LoginPage";
-import Register from "./pages/auth/RegisterPage";
+import SignUp from "./pages/auth/SignUp";
 import Terms from "./pages/TermsPage";
 import Privacy from "./pages/HomePage";
 
@@ -63,8 +63,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login setUserRole={setUserRole} />} />
           <Route
-            path="/register"
-            element={<Register setUserRole={setUserRole} />}
+            path="/signup"
+            element={<SignUp setUserRole={setUserRole} />}
           />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />

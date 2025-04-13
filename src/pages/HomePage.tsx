@@ -20,7 +20,7 @@ const Home = () => {
             <div className="mt-10 sm:flex sm:justify-center">
               <div className="rounded-md shadow">
                 <Link
-                  to="/register"
+                  to="/signup"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 md:py-4 md:text-lg md:px-10"
                 >
                   Get Started
@@ -160,10 +160,10 @@ const Home = () => {
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
               <Link
-                to="/register"
+                to="/signup"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600"
               >
-                Register
+                SignUp
               </Link>
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
