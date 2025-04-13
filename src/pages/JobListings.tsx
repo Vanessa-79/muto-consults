@@ -143,7 +143,7 @@ const Jobs = () => {
   const types = [...new Set(jobListings.map((job) => job.type))];
 
   // Handle job application or view details for non-logged-in users
-  const handleJobAction = (e) => {
+  const handleJobAction = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setShowLoginPrompt(true);
   };
