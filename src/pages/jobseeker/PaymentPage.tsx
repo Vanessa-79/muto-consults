@@ -1,11 +1,11 @@
 import React, { useState, FormEvent, useEffect } from "react";
 import {
-  CreditCard,
+  // CreditCard,
   Calendar,
   Lock,
   CheckCircle,
   Smartphone,
-  CreditCard as BankCard,
+  // CreditCard as BankCard,
 } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -180,10 +180,10 @@ export default function PaymentPage() {
                 maxLength={19}
                 required
               />
-              <CreditCard
+              {/* <CreditCard
                 className="absolute right-3 top-3 text-gray-400"
                 size={20}
-              />
+              /> */}
             </div>
           </div>
 
@@ -296,7 +296,7 @@ export default function PaymentPage() {
                     <span className="font-medium">Airtel Money</span>
                   </div>
                 </button>
-                <button
+                {/* <button
                   className={`flex-1 p-3 rounded-md border ${
                     paymentMethod === "bank"
                       ? "border-blue-500 bg-blue-50"
@@ -309,7 +309,7 @@ export default function PaymentPage() {
                     <BankCard className="mr-2 text-blue-600" size={20} />
                     <span className="font-medium">Credit/Debit Card</span>
                   </div>
-                </button>
+                </button> */}
               </div>
             </div>
 
