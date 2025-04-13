@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">For Job Seekers</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/jobs" className="text-gray-300 hover:text-white">
+                <Link to="/job-listings" className="text-gray-300 hover:text-white">
                   Browse Jobs
                 </Link>
               </li>

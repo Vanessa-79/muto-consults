@@ -20,6 +20,7 @@ import Login from "./pages/auth/LoginPage";
 import SignUp from "./pages/auth/SignUp";
 import Terms from "./pages/TermsPage";
 import Privacy from "./pages/HomePage";
+import JobListings from "./pages/JobListings";  
 
 // Admin Pages
 import AdminDashboard from "./pages/admin/AdminDashboard";
@@ -68,6 +69,7 @@ function App() {
           />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/job-listings" element={<JobListings />} />
         </Route>
 
         {/* Admin Routes */}
