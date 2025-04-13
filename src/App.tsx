@@ -22,9 +22,9 @@ import Terms from "./pages/TermsPage";
 import Privacy from "./pages/HomePage";
 
 // Admin Pages
-import AdminDashboard from "./pages/admin/Dashboard";
-// import AdminJobs from "./pages/admin/Jobs";
-// import AdminUsers from "./pages/admin/Users";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminJobs from "./pages/admin/AdminJobs";
+import AdminUsers from "./pages/admin/AdminUsers";
 // import AdminPayments from "./pages/admin/Payments";
 // import AdminSettings from "./pages/admin/Settings";
 
@@ -73,6 +73,10 @@ function App() {
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<AdminDashboard />} />
+          <Route path="admin-jobs" element={<AdminJobs />} />
+          <Route path="admin-users" element={<AdminUsers />} />
+          {/* <Route path="payments" element={<AdminPayments />} /> */}
+          {/* <Route path="settings" element={<AdminSettings />} /> */}
         </Route>
 
         {/* Job Seeker Routes */}
